@@ -89,7 +89,7 @@ namespace IdentityAppCourse2022.Controllers
             }
 
 
-            user.RoleList = _db.Roles.Select(u => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+            user.RoleList = _db.Roles.Select(u => new SelectListItem
             {
                 Text = u.Name,
                 Value = u.Id
